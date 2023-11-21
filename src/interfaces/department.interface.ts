@@ -1,5 +1,5 @@
-import {IEmployee} from "./employeeUtils.ts";
-import {IPreHiredEmployee} from "./preHiredEmployeeUtils.ts";
+import {IEmployee} from "./employee.interface.ts";
+import {IPreHiredEmployee} from "./preHiredEmployee.interface.ts";
 
 export type TStatus = 'active' | 'inactive' | 'unpaid leave';
 

@@ -1,6 +1,6 @@
-import {IDepartment  } from "./departmentUtils.ts";
-import {IPreHiredEmployee} from "./preHiredEmployeeUtils.ts";
-import {IEmployee} from "./employeeUtils.ts";
+import {IDepartment  } from "./department.interface.ts";
+import {IPreHiredEmployee} from "./preHiredEmployee.interface.ts";
+import {IEmployee} from "./employee.interface.ts";
 
 export type TAllEmployeeList = (IPreHiredEmployee | IEmployee)[] ;
 

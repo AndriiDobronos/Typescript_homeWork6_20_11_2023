@@ -1,4 +1,4 @@
-import {IPreHiredEmployee } from "../utils/preHiredEmployeeUtils.ts";
+import {IPreHiredEmployee } from "../interfaces/preHiredEmployee.interface.ts";
 
 export class PreHiredEmployee implements IPreHiredEmployee {
     constructor(

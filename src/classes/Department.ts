@@ -1,7 +1,7 @@
-import {IPreHiredEmployee} from "../utils/preHiredEmployeeUtils.ts";
-import {IEmployee} from "../utils/employeeUtils.ts";
+import {IPreHiredEmployee} from "../interfaces/preHiredEmployee.interface.ts";
+import {IEmployee} from "../interfaces/employee.interface.ts";
 import {Employee} from "./Employee.ts";
-import {IDepartment, TPaymentMethod, TStatus} from "../utils/departmentUtils.ts";
+import {IDepartment, TPaymentMethod, TStatus} from "../interfaces/department.interface.ts";
 
 export class Department implements IDepartment {
     public employees: IEmployee[] = [];

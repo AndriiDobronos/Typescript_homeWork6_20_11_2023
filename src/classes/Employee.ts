@@ -1,6 +1,6 @@
-import {IDepartment, TPaymentMethod, TStatus} from "../utils/departmentUtils.ts";
+import {IDepartment, TPaymentMethod, TStatus} from "../interfaces/department.interface.ts";
 import {PreHiredEmployee} from "./PreHiredEmployee.ts";
-import {IEmployee } from "../utils/employeeUtils.ts";
+import {IEmployee } from "../interfaces/employee.interface.ts";
 
 export class Employee extends PreHiredEmployee implements IEmployee {
     constructor(

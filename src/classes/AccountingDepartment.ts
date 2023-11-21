@@ -1,9 +1,9 @@
-import {IEmployee} from "../utils/employeeUtils.ts";
+import {IEmployee} from "../interfaces/employee.interface.ts";
 import {Department} from "./Department.ts";
-import {IDepartment, TPaymentMethod, TStatus} from "../utils/departmentUtils.ts";
-import {IAccountingDepartment } from "../utils/accountingDepartmentUtils.ts";
+import {IDepartment, TPaymentMethod, TStatus} from "../interfaces/department.interface.ts";
+import {IAccountingDepartment } from "../interfaces/accountingDepartment.interface.ts";
 import {Employee} from "./Employee";
-import {IPreHiredEmployee} from "../utils/preHiredEmployeeUtils";
+import {IPreHiredEmployee} from "../interfaces/preHiredEmployee.interface";
 import {PreHiredEmployee} from "./PreHiredEmployee";
 
 

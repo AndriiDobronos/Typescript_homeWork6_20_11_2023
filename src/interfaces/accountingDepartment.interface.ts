@@ -1,6 +1,6 @@
-import {IEmployee} from "./employeeUtils.ts";
-import {IDepartment} from "./departmentUtils";
-import {IPreHiredEmployee} from "./preHiredEmployeeUtils";
+import {IEmployee} from "./employee.interface.ts";
+import {IDepartment} from "./department.interface";
+import {IPreHiredEmployee} from "./preHiredEmployee.interface";
 
 export interface IAccountingDepartment {
     name: string;
