@@ -1,9 +1,4 @@
-export interface IPreHiredEmployee {
-    firstName: string;
-    lastName: string;
-    salary: number;
-    bankAccountNumber: string;
-}
+import {IPreHiredEmployee } from "../utils/preHiredEmployeeUtils.ts";
 
 export class PreHiredEmployee implements IPreHiredEmployee {
     constructor(

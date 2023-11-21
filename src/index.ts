@@ -24,12 +24,9 @@
 // зовнішніх оплат, Співробітники (тільки активні) - за допомогою внутрішніх.
 
 
-import {IEmployee } from "./employeeUtils.ts";
-import {IDepartment } from "./departmentUtils.ts";
-import {IPreHiredEmployee} from "./preHiredEmployeeUtils.ts";
-import {AccountingDepartment } from "./accountingDepartmentUtils.ts";
-import {Employee} from "./employeeUtils.ts";
-import {PreHiredEmployee} from "./preHiredEmployeeUtils.ts";
+import {AccountingDepartment } from "./components/AccountingDepartment.ts";
+import {Employee} from "./components/Employee.ts";
+import {PreHiredEmployee} from "./components/PreHiredEmployee.ts";
 
 const accountingDepartment = new AccountingDepartment(
     "IT accountingDepartment",

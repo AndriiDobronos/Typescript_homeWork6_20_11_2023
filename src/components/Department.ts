@@ -1,22 +1,7 @@
-import {IPreHiredEmployee } from "./preHiredEmployeeUtils.ts";
-import {IEmployee } from "./employeeUtils.ts";
-import {Employee} from "./employeeUtils.ts";
-
-export interface IDepartment {
-    name: string;
-    domain: string;
-    employees: IEmployee[];
-    budget: {
-        debit: number;
-        credit: number;
-    };
-    status: 'active' | 'inactive' | 'unpaid leave';
-    paymentMethod: 'external' | 'internal',
-    calculateBalance(): number;
-    addEmployee(employee: IEmployee): void;
-    convertPreHiredToEmployee(preHiredEmployee: IPreHiredEmployee): IEmployee;
-    removeEmployee(employee: IEmployee): void;
-}
+import {IPreHiredEmployee} from "../utils/preHiredEmployeeUtils.ts";
+import {IEmployee} from "../utils/employeeUtils.ts";
+import {Employee} from "./Employee.ts";
+import {IDepartment, TPaymentMethod, TStatus} from "../utils/departmentUtils.ts";
 
 export class Department implements IDepartment {
     public employees: IEmployee[] = [];
@@ -25,8 +10,8 @@ export class Department implements IDepartment {
         public name: string,
         public domain: string,
         public budget: { debit: number; credit: number },
-        public status: 'active' | 'inactive' | 'unpaid leave',
-        public paymentMethod: 'external' | 'internal',
+        public status: TStatus,
+        public paymentMethod: TPaymentMethod,
     ) {}
 
     calculateBalance(): number {
