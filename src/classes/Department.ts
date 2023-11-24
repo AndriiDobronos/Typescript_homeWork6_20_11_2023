@@ -1,7 +1,7 @@
 import {IPreHiredEmployee} from "../interfaces/preHiredEmployee.interface.ts";
 import {IEmployee} from "../interfaces/employee.interface.ts";
 import {Employee} from "./Employee.ts";
-import {IDepartment, TPaymentMethod, TStatus} from "../interfaces/department.interface.ts";
+import {TBudget, IDepartment, TPaymentMethod, TStatus} from "../interfaces/department.interface.ts";
 
 export class Department implements IDepartment {
     public employees: IEmployee[] = [];
@@ -9,7 +9,7 @@ export class Department implements IDepartment {
     constructor(
         public name: string,
         public domain: string,
-        public budget: { debit: number; credit: number },
+        public budget: TBudget ,
         public status: TStatus,
         public paymentMethod: TPaymentMethod,
     ) {}

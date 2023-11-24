@@ -5,14 +5,16 @@ export type TStatus = 'active' | 'inactive' | 'unpaid leave';
 
 export type TPaymentMethod = 'external' | 'internal';
 
-export interface IDepartment {
+export type TBudget = {debit: number, credit: number};
+
+export interface IBudget {
+    budget: TBudget
+}
+
+export interface IDepartment extends IBudget {
     name: string;
     domain: string;
     employees: IEmployee[];
-    budget: {
-        debit: number;
-        credit: number;
-    };
     status: TStatus;
     paymentMethod: TPaymentMethod;
     calculateBalance(): number;
